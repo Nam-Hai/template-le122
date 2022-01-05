@@ -1,0 +1,59 @@
+nav {
+    width: 1000px;
+    margin: 0 auto;
+}
+.nav-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    color: #313031;
+    font-size: 0.9rem;
+    grid-gap: 1rem;
+    .home {
+        height: 3rem;
+        img {
+            height: 100%;
+        }
+    }
+
+    .nav-items-active {
+        color: var(--primary);
+    }
+
+    .nav-items {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    
+    .nav-items::before {
+        content: '';
+        display: inline-block;
+        height: 4px;
+        width: 4px;
+        margin-right: 0.5rem;
+        background-color: var(--primary);
+        border-radius: 50%;
+    }
+    .nav-items:nth-child(2):before{
+        display: none;
+    }
+
+    .nav-btn.nav-margin {
+        margin-left: auto;
+    }
+
+    .nav-btn {
+        font-family: "Open Sans";
+    }
+}
+
+.hero {
+    background: url("../assets/Carte-hero.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+}
