@@ -1,18 +1,31 @@
 nav {
-    width: 1000px;
-    margin: 0 auto;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 40%);
+    top: 0;
+    z-index: 2;
 }
 .nav-container {
+    width: 1000px;
+    margin: 0 auto;
     padding: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-family: 'Roboto Slab', serif;
     color: #313031;
-    font-size: 0.9rem;
+    font-size: 14px;
     grid-gap: 1rem;
+
+    
+    > div {
+        cursor: pointer;
+    }
+
     .home {
-        height: 3rem;
+        height: 2.5rem;
         img {
             height: 100%;
         }
@@ -26,6 +39,22 @@ nav {
         display: flex;
         align-items: center;
         text-transform: uppercase;
+    }
+
+    .dropdown {
+        svg {
+            height: .9rem;
+            fill: var(--primary);
+            position: relative;
+            top: 1px;
+            margin-left: .5rem;
+            transition: 400ms;
+        }
+
+        &:hover svg {
+            transform: rotate(-180deg);
+            
+        }
     }
     
     .nav-items::before {
@@ -45,15 +74,46 @@ nav {
         margin-left: auto;
     }
 
-    .nav-btn {
+    .nav-btn button {
         font-family: "Open Sans";
+        text-transform: uppercase;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        padding: .3rem .5rem;
+        border-radius: 2px;
+        transition: 300ms;
+        &:hover {
+            color: white;
+            background: var(--primary);
+        }
     }
 }
 
 .hero {
+    position: relative;
+    margin-top: 72px;
     background: url("../assets/Carte-hero.jpg");
+    background-attachment: fixed;
     width: 100%;
     background-size: cover;
-    height: 400px;
-    background-position: center;
+    height: 550px;
+    background-position-y: 40%;
+}
+
+main {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 2rem;
+    app-carte-menu {
+        grid-column: 1 / 9;
+    }
+    .placeholder {
+        height: 50rem;
+        grid-column: 9 / 13;
+        width: 100%;
+        background: red;
+    }
 }
