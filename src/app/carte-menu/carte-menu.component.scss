@@ -1,0 +1,24 @@
+.container {
+    width: 100%;
+    padding: 1.25rem;
+    font-family: "Roboto Slab";
+    &.header-container {
+
+        &::after {
+            content: "";
+            display: block;
+            background-image: url("../../assets/divider-custom--black.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: 1rem;
+            height: 25px;
+        }
+    }
+    h3 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.75rem;
+        color: var(--primary);
+    }
+    
+}

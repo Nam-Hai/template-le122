@@ -10,7 +10,7 @@ nav {
 .nav-container {
     width: 1000px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -79,6 +79,7 @@ nav {
         text-transform: uppercase;
         color: var(--primary);
         border: 2px solid var(--primary);
+        font-size: 400;
         padding: .3rem .5rem;
         border-radius: 2px;
         transition: 300ms;
@@ -102,16 +103,20 @@ nav {
 
 main {
     position: relative;
-    margin: 0 auto;
+    margin: 3rem auto 10rem;
     width: 1000px;
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-gap: 2rem;
+
     app-carte-menu {
         grid-column: 1 / 9;
+        border: 2px solid #F4F4F4;
+        border-top: 2px solid var(--primary);
     }
+
     .placeholder {
-        height: 50rem;
+        height: 25rem;
         grid-column: 9 / 13;
         width: 100%;
         background: red;
