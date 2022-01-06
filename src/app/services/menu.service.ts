@@ -25,15 +25,18 @@ export class menuService {
                     name: 'Œuf parfait, maïs et chorizo',
                     price: '12,00€',
                     note: 'Lait, Oeufs'
-                },{
+                },
+                {
                     name: 'Ceviche de daurade, agrumes et coriandre',
                     price: '12,00€',
                     note: 'Poissons'
-                },{
+                },
+                {
                     name: 'Salade de poulpe, piquillos condiments tomate +3',
                     price: '12,00€',
                     note: 'Fruit à coque, Mollusques'
-                },{
+                },
+                {
                     name: 'Champignons des bois poêlés, magret de canard fumé',
                     price: '12,00€',
                     note: 'Arachides, Gluten'
