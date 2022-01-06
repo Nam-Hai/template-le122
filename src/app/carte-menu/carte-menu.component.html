@@ -1,4 +1,4 @@
 <div class="container header-container">
-    <h3>Carte & Menu</h3>
+    <h3>{{ headerTitle }}</h3>
 </div>
-<app-carte-menu-section *ngFor="let menu of menuJSON" [title]="menu.title" [dishJSON]="menu.items"></app-carte-menu-section>
+<app-carte-menu-section *ngFor="let menu of currentJSON" [title]="menu.title" [dishJSON]="menu.items" [titleNote]="menu.titleNote"></app-carte-menu-section>

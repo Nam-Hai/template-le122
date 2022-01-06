@@ -8,6 +8,7 @@ import { CarteMenuComponent } from './carte-menu/carte-menu.component';
 import { CarteMenuItemComponent } from './carte-menu-item/carte-menu-item.component';
 import { CarteMenuSectionComponent } from './carte-menu-section/carte-menu-section.component';
 import { menuService } from './services/menu.service';
+import { CarteVisualisateurComponent } from './carte-visualisateur/carte-visualisateur.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { menuService } from './services/menu.service';
     HeaderMenuCartesComponent,
     CarteMenuComponent,
     CarteMenuItemComponent,
-    CarteMenuSectionComponent
+    CarteMenuSectionComponent,
+    CarteVisualisateurComponent
   ],
   imports: [
     BrowserModule,

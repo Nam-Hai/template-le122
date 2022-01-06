@@ -1,6 +1,7 @@
 <div class="container">
     <div class="title">
         <h4>{{ title }}</h4>
+        <small *ngIf="titleNoteStatus">{{ titleNote }}</small>
     </div>
     <div class="carte-menu-items">
         <app-carte-menu-item *ngFor="let dish of dishJSON" [dishName]="dish.name" [price]="dish.price" [note]="dish.note" [subTitle]="dish.subTitle"></app-carte-menu-item>

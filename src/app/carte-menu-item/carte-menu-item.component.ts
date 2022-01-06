@@ -28,7 +28,7 @@ export class CarteMenuItemComponent implements OnInit {
   }
 
 
-  // check si cet item est un titre de sous section.
+  // check si cet item est un titre de sous section. Pour ainsi display ou non le séparateur.
   isItSubTitle(){
     if (this.subTitle == undefined){
       this.subTitleStatus = false;

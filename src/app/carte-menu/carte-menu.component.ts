@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { menuService } from '../services/menu.service';
 
 @Component({
@@ -8,9 +8,10 @@ import { menuService } from '../services/menu.service';
 })
 export class CarteMenuComponent implements OnInit {
 
-  menuJSON = this.menuService.menuJSON;
+  @Input() headerTitle!: string;
+  @Input() currentJSON!: any;
 
-  constructor(private menuService: menuService) {
+  constructor() {
 
   }
 

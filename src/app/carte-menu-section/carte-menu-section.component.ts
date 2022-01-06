@@ -9,11 +9,17 @@ export class CarteMenuSectionComponent implements OnInit {
 
   @Input() title!: string;
   @Input() dishJSON!: any;
+  @Input() titleNote?: string;
   
-  
+  titleNoteStatus: boolean = true;
   constructor() { }
 
   ngOnInit(): void {
+    if (this.titleNote == ""){
+      this.titleNoteStatus = false;
+    }
   }
 
+
+  
 }

@@ -104,21 +104,5 @@ nav {
 main {
     position: relative;
     margin: 3rem auto 10rem;
-    width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-gap: 2rem;
-
-    app-carte-menu {
-        grid-column: 1 / 9;
-        border: 2px solid #F4F4F4;
-        border-top: 2px solid var(--primary);
-    }
-
-    .placeholder {
-        height: 25rem;
-        grid-column: 9 / 13;
-        width: 100%;
-        background: red;
-    }
+    width: 1000px;    
 }
