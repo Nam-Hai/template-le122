@@ -1,0 +1,15 @@
+{
+	"title": "Menu",
+	"items": [
+		{
+			"name": 'Menu, entrée, plat, dessert',
+			"price": '39,00€',
+			"note": ''
+		},
+		{
+			"name": 'Menu Dégustation',
+			"price": '59,00€',
+			"note": 'uniquement au dîner, en 6 services, pour l’ensemble des convives'
+		}
+	]
+}

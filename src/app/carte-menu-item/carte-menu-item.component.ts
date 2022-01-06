@@ -20,7 +20,6 @@ export class CarteMenuItemComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.subTitle);
     if(this.note == ""){
       this.noteStatus = false;
     }
