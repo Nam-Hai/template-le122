@@ -9,11 +9,125 @@
         border-top: 2px solid var(--primary);
     }
 
-    .placeholder {
-        height: 25rem;
+    .container-resa-info {
         grid-column: 9 / 13;
         grid-row: 1 / 2;
         width: 100%;
-        background: red;
+        color: var(--text-color);
+
+        > div {
+            margin-bottom: 2rem;
+        }
+        h4 {
+            text-align: center;
+            font-weight: normal;
+            font-family: "roboto slab";
+
+        }
+        .resa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .btn {
+                margin-top: 1rem;
+                font-family: "Open Sans", sans-serif;
+                font-size: .9rem;
+                padding: .5rem 2rem;
+                background-color: var(--primary);
+                color: white;
+                font-weight: 400;
+                -webkit-font-smoothing: antialiased;
+                border-radius: 3px;
+                transition: background 400ms;
+                &:hover{
+                    background: var(--secondary);
+                    
+                }
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 1.5rem;
+            font-family: "Open Sans", sans-serif;
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                grid-gap: 1rem;
+                
+                a:first-child {
+                    font-size: .7rem;
+                    transition: color 300ms, background 300ms;
+
+                    &:hover {
+                        color: var(--primary);
+                    }
+                }
+                .underline {
+                    color: var(--primary);
+                    font-weight: 600;
+                    font-size: .9rem;
+                    transition: color 300ms, background 300ms;
+
+                    &:hover {
+                        color: var(--text-color);
+
+                        &::after {
+                            background: var(--text-color);
+                        }
+                    }
+
+                    &::after {
+                        transition: color 300ms, background 300ms;
+
+                        content: '';
+                        margin-top: .1rem;
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background: var(--primary);
+                    }
+                }
+            }
+        }
+
+        .info-display {
+
+            h5 {
+                margin-bottom: .4rem;
+                color: var(--primary);
+            }
+
+            .info-text {
+                font-size: 0.7rem;
+            }
+
+            .horaire {
+                .horaire-item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    grid-gap: .5rem;
+                    font-size: .7rem;
+                    margin-bottom: .2rem;
+                    .separator {
+                        height: 1px;
+                        flex-grow: 1;
+                        position: relative;
+                        top: calc(1rem - 5px);
+                        background-color: var(--light-secondary);
+                    }
+                }
+            }
+        }
     }
+
+}
+
+.border {
+    border: 4px solid var(--border);
+    padding: 1rem;
 }

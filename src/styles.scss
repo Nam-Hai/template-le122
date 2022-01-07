@@ -1,7 +1,9 @@
 :root {
     --primary: #b09584;
     --secondary: #2B2B2B;
+    --text-color: #56595F; 
     --light-secondary: #9B9B9B;
+    --border: #F4F4F4;
 }
 
 * {
@@ -18,4 +20,10 @@ button {
     font-size: unset;
     color: unset;
     cursor: unset;
+}
+
+a {
+    font-family: unset;
+    color: unset;
+    text-decoration: unset;
 }

@@ -5,7 +5,6 @@ export class menuService {
     menuJSON = [
         {
             title: "Menu",
-            titleNote: "15cl",
             items: [
                 {
                     name: 'Menu, entrée, plat, dessert',
@@ -137,7 +136,137 @@ export class menuService {
                 {
                     name: "Saint-Joseph 2018 - Bernard",
                     price: "9,00€"
+                },
+                {
+                    name: "Calcaires d'Ensérune 2018 Domaine La Combe Saint-Paul",
+                    price: "7,00€"
+                },
+                {
+                    subTitle: "Rosé"
+                },
+                {
+                    name: "Cuvée du moment - IGP/AOP",
+                    price: "8,00€"
+                },
+                {
+                    subTitle: "Rouge"
+                },
+                {
+                    name: "Menetou-Salon - Les Bornés 2018",
+                    price:"8,00€",
+                    note: "Domaine Henry Pellé"
+                },
+                {
+                    name: "Hautes-Côtes de Nuits - 16ème Génération 2018 Guy et Yvan Dufouleur",
+                    price: "8,00€"
+                },
+                {
+                    name: "Vacqueyras 2018 - Domaine d’Ouréa",
+                    price: "8,00€"
+                },
+                {
+                    name: "Crozes-Hermitage - Tradition 2018 Yann Chave",
+                    price: "9,00€"
+                },
+                {
+                    subTitle: "Vins doux naturels"
+                },
+                {
+                    name: "Muscat du moment",
+                    price: "7,00€",
+                    note: "8 cl"
+                },
+                {
+                    name: "Rappo - Domaine Orenga de Gaffory",
+                    price: "7,00€",
+                    note: "8 cl"
+                },
+                {
+                    name: "Maury - MA - 20 ans d'âge - Mas Amiel",
+                    price: "11,00€",
+                    note: "8 cl"
+                },
+                {
+                    name: "Banyuls Grand Cru - Pur Tradition - Cellier des Templiers",
+                    price: "6,00€",
+                    note: "8 cl"
+                },
+                {
+                    name: "Pineau des Charentes - François 1er - Maison Gaston Rivière",
+                    price: "9,00€",
+                    note: "8 cl"
                 }
+            ]
+        },
+        {
+            title: "Vin rosé",
+            titleNote: "75 cl",
+            items: [
+                {
+                    name: "Cuvée du moment – IGP / AOP",
+                    price: "32,00€",
+                }
+            ]
+        },
+        {
+            title: "Vins Blancs",
+            titleNote: "75 cl",
+            items: [
+                {
+                    subTitle: "Champagne"
+                },
+                {
+                    name:"Grand Cru Brut - Hervy-Quénardel - Verzenay",
+                    price: "49,00€"
+                },
+                {
+                    name: "Extra Brut - Hugues Godmé - Verzenay",
+                    price : "57,00€"
+                },
+                {
+                    name: "Blanc de Noirs L'Or d'Eugène - Moussé fils - Cuislse",
+                    price: "52,00€"
+                },
+                {
+                    name: "Brut - Royale Réserve - Philipponnat - Mareuil-sur-Aÿ",
+                    price: "69,00€"
+                },
+                {
+                    name: "1er Cru - Grand Cellier - Vilmart & Cie - Rilly-la-Montagne",
+                    price: "84,00€"
+                },
+                {
+                    name: "Grand Cru Extra Brut - Ros&Blanc Collection - Pertois-Moriset - Le Mesnil-sur-Oger",
+                    price: "76,00€"
+                },
+                {
+                    name: "Grand Cru Extra Brut - Blanc de Blancs - Franck Bonville - Avize",
+                    price: "74,00€"
+                },
+                {
+                    name: "Brut Nature - Lieu-Dit Largillier - Jérôme Coessens - Ville-sur-Arce",
+                    price: "72,00€"
+                },
+                {
+                    subTitle: "Alsace"
+                },
+                {
+                    name:"Gewurztraminer - Lieu-dit Haguenau 2017 Domaine Kientzler",
+                    price: "36,00€"
+                },
+                {
+                    name: "Pinot Gris - Réserve Particulière 2016 Domaine Kientzler",
+                    price : "36,00€"
+                },
+                {
+                    name: "Pinot Gris Grand Cru - Osterberg 2016 Domaine Kientzler",
+                    price: "45,00€"
+                },
+                {
+                    name: "Riesling - Ribeauvillé 2017 Domaine Kientzler",
+                    price: "38,00€"
+                },
+
             ]
         }
     ]

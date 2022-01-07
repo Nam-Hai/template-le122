@@ -1,4 +1,56 @@
 <div class="grid-12">
     <app-carte-menu *ngFor="let card of mainJSON" [headerTitle]="card.headerTitle" [currentJSON]="card.menuJSON"></app-carte-menu>
-    <div class="placeholder"></div>
+    <div class="container-resa-info">
+        <div class="resa border">
+            <h4>Réservation</h4>
+            <button class="btn">Réserver</button>
+        </div>
+
+        <div class="info border">
+            <h4>Infos pratiques</h4>
+            <div class="container">
+                <a href="https://www.google.com/maps/dir/48.1185898,-1.6211725/Restaurant+Le+122,+122+Rue+de+Grenelle,+75007+Paris/@48.4032418,-1.8727542,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47e66fd578b0f23b:0x4daf879ad19806a!2m2!1d2.3193589!2d48.8571453"  target="_blank">Invalides - Ecole Militaire, Saint-Germain-Des-Prés, Île-De-France - 122, rue de Grenelle
+                    75007 Paris
+                </a>
+                <a class="underline" href="https://www.google.com/maps/dir/48.1185898,-1.6211725/Restaurant+Le+122,+122+Rue+de+Grenelle,+75007+Paris/@48.4032418,-1.8727542,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47e66fd578b0f23b:0x4daf879ad19806a!2m2!1d2.3193589!2d48.8571453" target="_blank">
+                    ITINÉRAIRE
+                </a>
+            </div>
+
+            <div class="info-display">
+                <h5>Métro</h5>
+                <div class="info-text">
+                    Solférino (ligne 12), Varenne (ligne 13) RER ligne C (musée d'Orsay)
+                </div>
+            </div>
+            <div class="info-display">
+                <h5>Bus</h5>
+                <div class="info-text">
+                    Grenelle (ligne 69), Invalide (83,87,93)
+                </div>
+            </div>
+            <div class="info-display">
+                <h5>Parking</h5>
+                <div class="info-text">
+                    Parking Indigo Paris Bac Montalembert à 700m / Parking couvert 9, rue Montalembert 75007 Paris
+                </div>
+            </div>
+            <div class="info-display">
+                <h5>Horaire</h5>
+                <div class="horaire">
+                    <div class="horaire-item">
+                        <div class="day">Lundi</div>
+                        <div class="separator"></div>
+                        <div class="hour">12h00 - 20h00</div>
+                    </div>
+                    <div class="horaire-item">
+                        <div class="day">Mardi</div>
+                        <div class="separator"></div>
+                        <div class="hour">12h00 - 20h00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </div>
