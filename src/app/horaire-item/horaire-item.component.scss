@@ -1,0 +1,19 @@
+.horaire-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-gap: .5rem;
+    font-size: .7rem;
+    margin-bottom: .2rem;
+
+    .day {
+        font-weight: 900;
+    }
+    .separator {
+        height: 1px;
+        flex-grow: 1;
+        position: relative;
+        top: calc(1rem - 5px);
+        background-color: var(--light-secondary);
+    }
+}
