@@ -9,6 +9,8 @@ import { CarteMenuItemComponent } from './carte-menu-item/carte-menu-item.compon
 import { CarteMenuSectionComponent } from './carte-menu-section/carte-menu-section.component';
 import { menuService } from './services/menu.service';
 import { CarteVisualisateurComponent } from './carte-visualisateur/carte-visualisateur.component';
+import { HoraireItemComponent } from './horaire-item/horaire-item.component';
+import { horaireService } from './services/horaire.service';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import { CarteVisualisateurComponent } from './carte-visualisateur/carte-visuali
     CarteMenuComponent,
     CarteMenuItemComponent,
     CarteMenuSectionComponent,
-    CarteVisualisateurComponent
+    CarteVisualisateurComponent,
+    HoraireItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    menuService
+    menuService,
+    horaireService
   ],
   bootstrap: [AppComponent]
 })

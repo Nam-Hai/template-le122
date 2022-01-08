@@ -1,11 +1,13 @@
 <nav>
-  <div class="nav-container">
+  <div class="nav-container width">
     <div class="home">
       <img src="../assets/logo.png" alt="logo">
     </div>
-    <div class="nav-items nav-items-active dropdown">
-      <button>Cartes & Menu</button>
-      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Caret Down</title><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"/></svg>
+    <div class="nav-items dropdown">
+      <a href="#carte-menu">Cartes & Menu</a>
+      <!--
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Caret Down</title><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"/></svg>
+      -->
     </div>
     <div class="nav-items">
       <button>Photos</button>
@@ -25,8 +27,75 @@
 <section class="hero"></section>
 <app-header-menu-cartes></app-header-menu-cartes>
 
-<main>
-  <app-carte-visualisateur></app-carte-visualisateur>
+<main class="grid-12 width">
+  <div class="container-presentation">
+    <h2>Le Bistrot</h2>
+    <p>Bienvenue dans notre univers !
+
+      Oscillant entre des classiques revisités, des plats mijotés, des assiettes généreuses et créatives,
+      
+      au plus près des meilleurs produits arrivés chaque jour, au fil des saisons, en plein cœur du septième arrondissement.
+      
+      La belle carte des vins de vignerons, avec ses 90 références, du vin nature au grand cru, avec un large choix de vins servies au verre, font la joie des amateurs.</p>
+
+      <div class="photo-wrapper">
+        <div>
+          <img src="../assets/photo1.jpeg" alt="photo1">
+          <img src="../assets/photo2.jpg" alt="photo2">
+        </div>
+        <div>
+          <img src="../assets/photo3.jpg" alt="photo3">
+        </div>
+        
+      </div>
+  </div>
+
+  <div class="container-resa-info">
+    <div class="resa border">
+        <h4>Réservation</h4>
+        <button class="btn">Réserver</button>
+    </div>
+
+    <div class="info border">
+        <h4>Infos pratiques</h4>
+        <div class="container-itinéraire">
+            <a href="https://www.google.com/maps/dir/48.1185898,-1.6211725/Restaurant+Le+122,+122+Rue+de+Grenelle,+75007+Paris/@48.4032418,-1.8727542,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47e66fd578b0f23b:0x4daf879ad19806a!2m2!1d2.3193589!2d48.8571453"  target="_blank">Invalides - Ecole Militaire, Saint-Germain-Des-Prés, Île-De-France - 122, rue de Grenelle
+                75007 Paris
+            </a>
+            <a class="underline" href="https://www.google.com/maps/dir/48.1185898,-1.6211725/Restaurant+Le+122,+122+Rue+de+Grenelle,+75007+Paris/@48.4032418,-1.8727542,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47e66fd578b0f23b:0x4daf879ad19806a!2m2!1d2.3193589!2d48.8571453" target="_blank">
+                ITINÉRAIRE
+            </a>
+        </div>
+
+        <div class="info-display">
+            <h5>Métro</h5>
+            <div class="info-text">
+                Solférino (ligne 12), Varenne (ligne 13) RER ligne C (musée d'Orsay)
+            </div>
+        </div>
+        <div class="info-display">
+            <h5>Bus</h5>
+            <div class="info-text">
+                Grenelle (ligne 69), Invalide (83,87,93)
+            </div>
+        </div>
+        <div class="info-display">
+            <h5>Parking</h5>
+            <div class="info-text">
+                Parking Indigo Paris Bac Montalembert à 700m / Parking couvert 9, rue Montalembert 75007 Paris
+            </div>
+        </div>
+        <div class="info-display">
+            <h5>Horaire</h5>
+            <div class="horaire">
+                <app-horaire-item *ngFor="let horaire of horaireJSON" [day]="horaire.day" [horaire]="horaire.horaire"></app-horaire-item>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="wrapper" id="carte-menu">
+    <app-carte-visualisateur ></app-carte-visualisateur>
+  </div>
 </main>
 
 <router-outlet></router-outlet>

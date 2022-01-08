@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { horaireService } from './services/horaire.service';
 
 
 @Component({
@@ -9,4 +10,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'first-template';
 
+
+  constructor(private horaireService: horaireService) {
+  }
+
+  horaireJSON = this.horaireService.horaireJSON;
 }
